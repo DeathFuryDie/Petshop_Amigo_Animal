@@ -1,44 +1,123 @@
 
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>PetShop Amigo Animal</title>
+</head>
 <body>
 
-<header>
-  <h1>PetShop Amigo Animal</h1>
-  <nav>
-    <a href="index.html">Início</a> |
-    <a href="produtos.html">Produtos</a> |
-    <a href="servicos.html">Serviços</a>
-  </nav>
-  <hr>
-</header>
+<!-- produtos.html - Exibição de produtos por categoria usando cards Bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">PetShop Amigo Animal</a>
+    <div class="collapse navbar-collapse" id="navmenu2">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link active" href="produtos.html">Produtos</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+        <li class="nav-item"><a class="nav-link" href="agendamento.html">Agendamento</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<h2>Produtos</h2>
+<div class="container my-4">
+  <h2>Produtos</h2>
 
-<h3>Acessórios</h3>
-<ul>
-  <li><img src="https://via.placeholder.com/100"> Coleira Colorida - R$ 25,00</li>
-  <li><img src="https://via.placeholder.com/100"> Brinquedo Bola - R$ 15,00</li>
-</ul>
+  <!-- Acessórios -->
+  <section aria-labelledby="acessorios-heading" class="mb-4">
+    <h3 id="acessorios-heading">Acessórios</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-3" aria-label="Coleira colorida">
+          <img src="https://via.placeholder.com/300x200?text=Coleira" class="card-img-top" alt="Coleira colorida para cães">
+          <div class="card-body">
+            <h5 class="card-title">Coleira Colorida</h5>
+            <p class="card-text">Coleira ajustável com material resistente.</p>
+            <p class="card-text"><strong>R$ 25,00</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-3" aria-label="Brinquedo bola">
+          <img src="https://via.placeholder.com/300x200?text=Brinquedo" class="card-img-top" alt="Brinquedo em forma de bola">
+          <div class="card-body">
+            <h5 class="card-title">Brinquedo Bola</h5>
+            <p class="card-text">Bola de borracha resistente para diversão.</p>
+            <p class="card-text"><strong>R$ 15,00</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<h3>Rações</h3>
-<ul>
-  <li><img src="https://via.placeholder.com/100"> Ração Premium 1kg - R$ 35,00</li>
-  <li><img src="https://via.placeholder.com/100"> Ração Adulto 1kg - R$ 28,00</li>
-</ul>
+  <!-- Rações -->
+  <section aria-labelledby="racoes-heading" class="mb-4">
+    <h3 id="racoes-heading">Rações</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <img src="https://via.placeholder.com/300x200?text=Racao+Premium" class="card-img-top" alt="Ração premium 1kg">
+          <div class="card-body">
+            <h5 class="card-title">Ração Premium 1kg</h5>
+            <p class="card-text">Formula balanceada para cães adultos.</p>
+            <p class="card-text"><strong>R$ 35,00</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <img src="https://via.placeholder.com/300x200?text=Racao+Adulto" class="card-img-top" alt="Ração adulto 1kg">
+          <div class="card-body">
+            <h5 class="card-title">Ração Adulto 1kg</h5>
+            <p class="card-text">Custo-benefício para alimentação diária.</p>
+            <p class="card-text"><strong>R$ 28,00</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<h3>Higiene e Limpeza</h3>
-<ul>
-  <li><img src="https://via.placeholder.com/100"> Tapete Higiênico - R$ 40,00</li>
-  <li><img src="https://via.placeholder.com/100"> Shampoo Pet - R$ 18,00</li>
-</ul>
+  <!-- Higiene -->
+  <section aria-labelledby="higiene-heading" class="mb-4">
+    <h3 id="higiene-heading">Higiene e Limpeza</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <img src="https://via.placeholder.com/300x200?text=Tapete" class="card-img-top" alt="Tapete higiênico descartável">
+          <div class="card-body">
+            <h5 class="card-title">Tapete Higiênico</h5>
+            <p class="card-text">Embale com camada absorvente de alta eficiência.</p>
+            <p class="card-text"><strong>R$ 40,00</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <img src="https://via.placeholder.com/300x200?text=Shampoo" class="card-img-top" alt="Shampoo pet para limpeza e brilho">
+          <div class="card-body">
+            <h5 class="card-title">Shampoo Pet</h5>
+            <p class="card-text">Hipoalergênico e suave para peles sensíveis.</p>
+            <p class="card-text"><strong>R$ 18,00</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 
-
-<hr>
-<footer>
-  <p>© 2025 PetShop Amigo Animal - Todos os direitos reservados.</p>
-  <p>Contato: contato@amigoanimal.com</p>
+<footer class="bg-light text-center text-lg-start mt-4">
+  <div class="text-center p-3">
+    © 2025 PetShop Amigo Animal • Contato: contato@amigoanimal.com
+  </div>
 </footer>
 
+<!-- Bootstrap JS Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
